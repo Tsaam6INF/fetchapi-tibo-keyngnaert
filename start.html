@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toets Get Post</title>
+</head>
+<body>
+    <div id="info" class="informatie"></div>
+    <script>
+        fetch("https://repapiuser.onrender.com/api/user/getUserRights")
+            .then((info) => info.json())
+            .then((data) => {
+                console.log(data);
+            })
+    </script>
+</body>
+</html>
